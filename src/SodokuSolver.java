@@ -41,7 +41,7 @@ class SudokuSolver {
         }
         boolean solvable = solve(0);
         if (!solvable) {
-            answer = null;
+            answer.clear();
         }
         return solvable;
     }
@@ -83,5 +83,9 @@ class SudokuSolver {
             }
             return false;
         }
+    }
+
+    public String[] getAnwer() {
+        return (String[]) (answer.toArray());
     }
 }
