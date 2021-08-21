@@ -22,7 +22,7 @@ public class SodukuHelper {
 
     //get a hint for next step 
     public void getHint() {
-        if (ansIdx < answer.length) {
+        if (answer != null && ansIdx < answer.length) {
             System.out.println(answer[ansIdx++]);
         } else {
             System.out.println("no hint available!");
@@ -32,7 +32,7 @@ public class SodukuHelper {
 
     public static void main(String[] args) {
         char[][] test = new char[][]{
-            {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
+            {'7', '3', '.', '.', '7', '.', '.', '.', '.'},
             {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
             {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
             {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
