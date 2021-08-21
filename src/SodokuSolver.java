@@ -86,6 +86,9 @@ class SudokuSolver {
     }
 
     public String[] getAnwer() {
+        if (answer == null) {
+            return null;
+        }
         return (String[]) (answer.toArray());
     }
 }
